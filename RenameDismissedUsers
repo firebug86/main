@@ -1,5 +1,5 @@
 import-module activedirectory
-$Path = 'OU=test,OU=2020,OU=HQ,OU=Dismissed Users,DC=rzdp,DC=ru'
+$Path = 'OU=test,OU=2020,OU=HQ,OU=Dismissed Users,DC=test,DC=ru'
 $users = Get-ADUser -filter 'SamAccountName -Notlike "DISM_*"' -SearchBase $Path -Properties DisplayName | Select DisplayName, GivenName, Surname, Name, DistinguishedName
 ForEach ($User In $Users)
 {
