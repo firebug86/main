@@ -1,3 +1,1 @@
-Get-MailboxStatistics %UserName% | Format-Table DisplayName, TotalItemSize, ItemCount, totaldeleteditemsize, storagelimitstatus
-
-
+Get-MailboxStatistics %UserName% | Format-Table DisplayName, TotalItemSize, ItemCount, TotalDeletedItemSize, StorageLimitStatus
